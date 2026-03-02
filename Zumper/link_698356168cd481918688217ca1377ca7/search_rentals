@@ -1,0 +1,25 @@
+{
+  "path": "/Zumper/link_698356168cd481918688217ca1377ca7/search_rentals",
+  "args": {
+    "address_location": "2584 Mariposa Road, Stanley, NC 28164",
+    "min_bedrooms": 3,
+    "max_bedrooms": 3,
+    "min_bathrooms": 3,
+    "max_bathrooms": 3,
+    "min_sqft": 2877,
+    "max_sqft": 2877,
+    "property_types": ["house"],
+    "limit": 10
+  }
+}
+
+<!-- Embedded Listing Widget -->
+<div id="vivia-listing-widget" style="width: 100%; max-width: 600px; margin: auto;">
+  <iframe 
+    src="https://rental-widget.turbotenant.com/embed?address=2584+Mariposa+Road,+Stanley,+NC+28164&beds=3&baths=3&sqft=2877&cta=Landlord+Listing+%26+Onboarding+Service" 
+    width="100%" 
+    height="500px" 
+    style="border: none; border-radius: 8px; overflow: hidden;"
+    allowfullscreen>
+  </iframe>
+</div>
