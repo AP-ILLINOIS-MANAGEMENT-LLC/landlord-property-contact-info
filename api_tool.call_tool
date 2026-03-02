@@ -1,0 +1,11 @@
+{
+  "path": "github.create_repository",
+  "args": {
+    "name": "landlord-property-contact-info",
+    "description": "Repository storing landlord, property, and contact info including rent, move-in dates, messages, CRM links, and host signature for VIVIA Rentals.",
+    "private": false,
+    "auto_init": true,
+    "gitignore_template": "Markdown",
+    "license_template": "mit"
+  }
+}
