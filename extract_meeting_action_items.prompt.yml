@@ -1,0 +1,69 @@
+messages:
+  - role: system
+    content: |-
+      # prompt.yml
+      prompts:
+        - name: extract_meeting_action_items
+          description: >
+            Extracts action items from a meeting transcript.
+            For each action item, include:
+              - Task description
+              - Responsible person (if mentioned)
+              - Due date or timeline (if mentioned)
+              - Dependencies or notes
+          system: |
+            You are a helpful assistant that breaks down action items from a meeting. 
+            Focus only on tasks or follow-ups mentioned during the discussion. 
+            Provide structured output with task, responsible person, due date, and notes.
+          user: |
+            Pull out the action items from this meeting transcript: {{input}}
+          output_format: |
+            Action Items:
+            1. Task: <Task Description>
+               Responsible: <Person or Team>
+               Due: <Due Date or Timeline>
+               Notes: <Additional context or dependencies>
+            2. Task: <Task Description>
+               Responsible: <Person or Team>
+               Due: <Due Date or Timeline>
+               Notes: <Additional context or dependencies>
+            ...
+  - role: user
+    content: >-
+      Action Items:
+
+
+      1. Task: Prepare rental property listings for the new landlord portal.
+         Responsible: Development Team
+         Due: Next sprint (2 weeks)
+         Notes: Include search filters by address, bedrooms, bathrooms, and square footage.
+
+      2. Task: Integrate Twilio WhatsApp OTP verification into the sign-up
+      workflow.
+         Responsible: Backend Team
+         Due: March 10, 2026
+         Notes: OTP system must be secure and linked to user accounts.
+
+      3. Task: Set up Stripe subscription products for Landlord Listing and
+      Property Management Suite.
+         Responsible: Product/Finance Team
+         Due: March 5, 2026
+         Notes: Ensure checkout redirects correctly to the dashboard.
+
+      4. Task: Configure HubSpot CRM to capture landlord sign-ups and listing
+      data.
+         Responsible: Marketing/CRM Team
+         Due: March 7, 2026
+         Notes: Track referral sources and subscription choices.
+
+      5. Task: Implement Slack notifications for new sign-ups and property
+      listings.
+         Responsible: DevOps/IT Team
+         Due: March 8, 2026
+         Notes: Notifications should include user name, email, and listing info.
+
+      6. Task: Redirect landlords to Facebook Group after listing creation.
+         Responsible: Front-end Team
+         Due: March 6, 2026
+         Notes: Ensure community engagement and marketplace exposure.
+model: openai/gpt-4o
